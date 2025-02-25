@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Прогрес-бар -->
+        <div id="progressBar" class="stepper"></div>
+
+        <!-- Заголовок -->
+        <h4 class="text-center my-4">Анкета </h4>
+
+        <div class="content-wrapper">
+            <form id="form" class="needs-validation" novalidate>
+                <!-- Контейнер для кроків -->
+                <div id="stepsContainer">
+                    <!-- Крок 1: Статус -->
+                    <div id="statusStep" class="step-page active"></div>
+
+                    <!-- Крок 2: Особиста інформація -->
+                    <div id="personalInfoStep" class="step-page"></div>
+
+                    <!-- Крок 3: Місце проживання -->
+                    <div id="locationStep" class="step-page"></div>
+
+                    <!-- Крок 4: Контактні дані -->
+                    <div id="contactDetailsStep" class="step-page"></div>
+
+                    <!-- Крок 5A: Сімейний стан (для стандартного сценарію) -->
+                    <div id="maritalStatusStep" class="step-page"></div>
+
+                    <!-- Крок 5B: Зв'язок (для альтернативного сценарію) -->
+                    <div id="relationshipStep" class="step-page"></div>
+
+                    <!-- Інші кроки -->
+                    <div id="childrenStep" class="step-page"></div>
+                    <div id="additionalInfoStep" class="step-page"></div>
+                    <div id="needsStep" class="step-page"></div>
+                    <div id="extraContactDetailsStep" class="step-page"></div>
+                    <div id="militaryServiceStep" class="step-page"></div>
+                    <div id="ngoStep" class="step-page"></div>
+                    <div id="photoStep" class="step-page"></div>
+                </div>
+
+                <!-- Кнопки навігації -->
+                <div class="btn-container">
+                    <button type="button" id="prevButton" class="btn btn-secondary d-none">Назад</button>
+                    <button type="button" id="nextButton" class="btn btn-primary">Далі</button>
+                    <button type="submit" id="submitButton" class="btn btn-success d-none">Відправити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Контейнер для модальних вікон -->
+    <div id="modalsContainer"></div>
+
+    <!-- Прелоадер -->
+    <div class="preloader-container" id="preloaderContainer">
+        <div class="preloader">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
